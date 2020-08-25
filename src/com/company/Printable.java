@@ -1,6 +1,6 @@
 package com.company;
 
 public interface Printable<T> {
-    T engine();
+    T volume();
     T year();
 }

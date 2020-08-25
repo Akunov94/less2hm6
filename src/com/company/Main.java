@@ -11,6 +11,8 @@ public class Main {
     }
 
     public static <T extends Number> void printInfo(Auto<T> car1) {
-        System.out.println("Модел " + car1.getName() + " двигатель " + car1.getVolume() + " год " + car1.getYear());
+        System.out.println("Модел " + car1.getName() +
+                " двигатель " + car1.getVolume() +
+                " год " + car1.getYear());
     }
 }

@@ -2,10 +2,10 @@ package com.company;
 
 public class Auto <T> implements Printable {
     private String name;
-    private double volume;
+    T volume;
     T year;
 
-    public Auto(String name, double volume, T year) {
+    public Auto(String name, T volume, T year) {
         this.name = name;
         this.volume = volume;
         this.year = year;
@@ -15,7 +15,7 @@ public class Auto <T> implements Printable {
         return name;
     }
 
-    public double getVolume() {
+    public T getVolume() {
         return volume;
     }
 
@@ -24,12 +24,12 @@ public class Auto <T> implements Printable {
     }
 
     @Override
-    public Object engine() {
-        return null;
+    public T volume() {
+        return volume;
     }
 
     @Override
-    public Object year() {
-        return null;
+    public T year() {
+        return year;
     }
 }
